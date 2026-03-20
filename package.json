@@ -1,0 +1,20 @@
+{
+  "name": "mcp-server-m365",
+  "version": "0.1.0",
+  "description": "Standalone MCP server for Microsoft 365 via Graph API. Works with Claude Code, Cursor, Windsurf, or any MCP client.",
+  "type": "module",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test:tools": "echo '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/list\"}' | node src/index.mjs",
+    "test:todo": "echo '{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/call\",\"params\":{\"name\":\"todo_list_tasks\",\"arguments\":{}}}' | node src/index.mjs"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.16.3",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

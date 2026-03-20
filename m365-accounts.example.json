@@ -1,0 +1,14 @@
+{
+  "default": {
+    "tenantId": "your-tenant-id",
+    "clientId": "your-client-id",
+    "clientSecret": "your-client-secret",
+    "userId": "user@yourdomain.com"
+  },
+  "work": {
+    "tenantId": "work-tenant-id",
+    "clientId": "work-client-id",
+    "clientSecret": "work-client-secret",
+    "userId": "user@company.com"
+  }
+}
